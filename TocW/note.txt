@@ -1,0 +1,260 @@
+
+/* #circle {
+  position: relative;
+  width: 120px; 
+  height: 120px; 
+  background:white;
+  border-style: solid;
+  border-radius: 50%;
+  border-color: gray;
+  text-align: center;
+} */
+
+/* init state */
+#circle1 {
+  position: relative;
+  /* left: 150px;
+  top: 350px; */
+  width: 120px; /* ความกว้าง */
+  height: 120px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+
+h1#circle1{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+}
+
+/* เลือกน้ำ */
+#circle2_1 {
+  position: absolute;
+  /* left: 350px;
+  top: 250px; */
+  width: 120px; /* ความกว้าง */
+  height: 120px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+#circle2_2 {
+  position: absolute;
+  /* left: 350px;
+  top: 450px; */
+  text-align: center;
+  width: 120px; /* ความกว้าง */
+  height: 120px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+
+/* sugar */
+#circle3_1 {
+  position: absolute;
+  /* left: 550px;
+  top: 250px; */
+  width: 120px; /* ความกว้าง */
+  height: 120px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+#circle3_2 {
+  position: absolute;
+  /* left: 550px;
+  top: 450px; */
+  text-align: center;
+  width: 120px; /* ความกว้าง */
+  height: 120px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+
+/* bubble */
+#circle4_1 {
+  position: absolute;
+  /* left: 750px;
+  top: 250px; */
+  width: 120px; /* ความกว้าง */
+  height: 120px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+#circle4_2 {
+  position: absolute;
+  /* left: 750px;
+  top: 450px; */
+  text-align: center;
+  width: 120px; /* ความกว้าง */
+  height: 120px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+
+/* หยอดเหรียญ */
+#circle5 {
+  position: absolute;
+  /* left: 950px;
+  top: 250px; */
+  width: 120px; /* ความกว้าง */
+  height: 120px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+
+#circle5_1 {
+  position: absolute;
+  /* left: 950px;
+  top: 450px; */
+  text-align: center;
+  width: 120px; /* ความกว้าง */
+  height: 120px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+ /* final state */
+#circle5_2 {
+  position: absolute;
+  /* left: 1150px;
+  top: 350px; */
+  text-align: center;
+  width: 120px; /* ความกว้าง */
+  height: 120px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+#circle5_3 {
+  position: absolute;
+  /* left: 1160px;
+  top: 360px; */
+  text-align: center;
+  width: 100px; /* ความกว้าง */
+  height: 100px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+
+/* reject */
+#circle6 {
+  position: absolute;
+  /* left: 650px;
+  top: 650px; */
+  text-align: center;
+  width: 120px; /* ความกว้าง */
+  height: 120px; /* ความสูง */
+  background:white;
+  border-style: solid;
+  border-radius: 70px;
+  border-color: gray;
+  text-align: center;
+}
+
+
+table{
+  width: 80%;
+  margin-left: 10%;
+  height: 80%;
+}
+
+th,td{
+  padding: 30px;
+  padding-left: 25px;
+}
+
+
+    <!-- <table>
+      <tr>
+        <td id="circle">Start00</td>
+        <td id="circle">Start01</td>
+        <td id="circle">Start02</td>
+        <td id="circle">Start03</td>
+        <td id="circle">Start04</td>
+        <td id="circle">Start05</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td>14</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>21</td>
+        <td>22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+      </tr>
+      
+    </table> -->
+
+    <!-- <div class="grid-container-dfa">
+      <div id="circle1">
+        <h4>Start</h4>
+      </div>
+      <div id="circle2_1">
+        <h4>Milk Tea</h4>
+      </div>
+      <div id="circle2_2">
+        <h4>Green Tea</h4>
+      </div>
+      <div id="circle3_1">
+        <h4>Sugar 100%</h4>
+      </div>
+      <div id="circle3_2">
+        <h4>Sugar 50%</h4>
+      </div>
+      <div id="circle4_1">
+        <h4>Add</h4>
+      </div>
+      <div id="circle4_2">
+        <h4>Not Add</h4>
+      </div>
+      <div id="circle5">
+        <h4>10 for Bubble</h4>
+      </div>
+      <div id="circle5_1">
+        <h4>first 10</h4>
+      </div>
+      <div id="circle5_2"></div>
+      <div id="circle5_3">
+        <h4>second 10</h4>
+      </div>
+      <div id="circle6">
+        <h4>คืนเหรียญ</h4>
+      </div>
+    </div> -->

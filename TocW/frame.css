@@ -1,0 +1,817 @@
+
+@font-face {  
+    font-family: 'LillyBelle' ;  
+    src: url( fonts/LillyBelle_2.ttf ) format("truetype");  
+  }
+  
+  @font-face {  
+    font-family: 'Superspace' ;  
+    src: url( fonts/Superspace.ttf ) format("truetype");  
+  }
+  @font-face {  
+    font-family: 'THSarabun' ;  
+    src: url( fonts/THSarabun.ttf ) format("truetype");  
+  }
+  
+  body{
+    font-family: 'Superspace';
+  }
+  
+  .header {
+      background-color: #dfb8d7;
+      text-align: center;
+      padding: 20px; 
+      font-size: 40px;
+  }
+  
+  i{
+    font-family: 'LillyBelle'
+  }
+    
+  
+  .blank{
+      background-color: #FFFFFF;
+      padding: 5px;
+  }
+  .pink{
+    background-color: #f7b4c6;
+    padding-top: 5px
+  }
+  .gray{
+    background-color:rgb(219, 219, 219);
+    padding-top: 5px
+  }
+  .black{
+    background-color:gray;
+    padding-top: 5px
+  }
+  .grid-container {
+      position: relative;
+      padding-top: 50px;
+      padding-right: 30px;
+      padding-bottom: 50px;
+      padding-left: 80px;
+      display: grid;
+      justify-content: center;
+      grid-template-columns:250px 250px ;
+      grid-gap: 40px;
+    }
+  
+  /* order success */
+  .grid-container-or {
+      position: relative;
+      padding-top: 50px;
+      padding-right: 30px;
+      padding-left: 80px;
+      padding-bottom: 50px;
+      display: grid;
+      justify-content: center;
+      grid-template-columns:800px 250px;
+      grid-gap: 100px;
+  
+  }
+  
+  .grid-container-dfa {
+    position: relative;
+    padding-top: 100px;
+    padding-right: 30px;
+    padding-left: 10px;
+    padding-bottom: 300px;
+    display: grid;
+    justify-content: left;
+    grid-template-columns:10px 20px 20px 80px 20px 80px 20px 80px 50px 20px 20px;
+    grid-template-rows: 1px 1px 1px 1px 1px 1px 1px;
+    grid-gap: 100px;
+    
+  
+  }
+  
+  .grid-container-or2 {
+    position: relative;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 80px;
+    padding-bottom: 50px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns:800px 250px;
+    grid-gap: 40px;
+  }
+  
+  .grid-container-name {
+    position: relative;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 700px;
+    font-size: 30px;
+    line-height: 5px;
+    letter-spacing: 3px;
+  }
+  
+  #order{
+      width: 850px;
+      height: 50px;
+      left: 120px;
+      background-color: #f7b4c6;
+      text-align: left;
+      padding-left: 20px;
+      font-size: 30px;
+    }
+  
+  /*ขอบชมพู*/
+  .img1{
+    background-color:#f7b4c6;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 50% 
+  }
+  .button {
+    background-color: #f7b4c6;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*margin: 10px 2px;*/
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-family: 'Superspace';
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  
+  .button1:hover:enabled , .button:hover:enabled , .button2:hover:enabled{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  /*ขอบขาว*/
+  .img2{
+    background-color :#FFFFFF;
+    justify-content: center;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin-top: 20px;
+  }
+  .button2 {
+    background-color:#FFFFFF;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /*margin: 10px 2px;*/
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    font-family: 'Superspace';
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  
+  .button2-1:hover:enabled {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  .compute {
+    position: relative;
+    font-family: 'Superspace';
+    font-weight: bolder;
+    font-size: 30px;
+    z-index: 100;
+  }
+  .combutton {
+    background-color:#97d4d7;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /*margin: 10px 2px;*/
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  
+  .combutton1:hover:enabled {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  
+  .button:enabled , .button2:enabled , #cancel1:enabled , #cancel2:enabled , #cancel3:enabled , #cancel4:enabled , #next:enabled
+  {
+    cursor: pointer;
+  }
+  
+  
+  /*แท็กชมพู*/
+  .tag1 {
+    height:80px;
+    width: 40%;
+    background-color: #f7b4c6;
+    font-size: 25px;
+    
+  }
+  
+  h2 {
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 15px;
+  
+  }
+  
+  /*แท็กขาว*/
+  .tag2 {
+    height:80px;
+    width: 30%;
+    background-color:white;
+    font-size: 25px;
+    text-align: left;
+  }
+  
+  /*แท็กฟ้า*/
+  .tag3 {
+    height: 80px;
+    width: 30%;
+    background-color:#97d4d7;
+    font-size: 25px;
+  }
+  
+  
+  .img3{
+    position: relative;
+    left: 450px;
+    background-color:#f7b4c6;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+    border-radius: 50% 
+  }
+  
+  .cancel {
+    position: relative;
+    left: 500px;
+    font-family: 'Superspace';
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  .canbutton {
+    background-color:#f1304a;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    /*margin: 10px 2px;*/
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+  
+  .canbutton1:hover:enabled {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  /*payment*/
+  .grid-container2 {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns:250px 500px;
+    grid-gap: 50px;
+  }
+  
+  
+  .cancel2 {
+    position: relative;
+    left:625px;
+    font-family: 'Superspace';
+    font-weight: bolder;
+    font-size: 30px;
+  }
+  
+  /* output Language */
+  #tag5{
+    position: relative;
+    top: 50px;
+    height: 80px;
+    width: 800px;
+    border: 15px solid #97d4d7;
+    background-color: white;
+    text-align: left;
+    font-size: 50px;
+    letter-spacing: 5px;
+    padding-left: 20px;
+  }
+  
+  #result{
+    color: red;
+    font-size: 40px;
+    font-weight: bolder;
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+  
+  
+  
+  
+  /*---------DFA----------*/
+  #circle1 {
+    position: relative;
+    width: 120px; /* ความกว้าง */
+    height: 120px; /* ความสูง */
+    background:white;
+    border-style: solid;
+    border-radius: 70px;
+    border-color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -55px;
+  }
+  
+  #circle2 {
+    position: relative;
+    width: 120px; /* ความกว้าง */
+    height: 120px; /* ความสูง */
+    background:white;
+    border-style: solid;
+    border-radius: 70px;
+    border-color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -55px;
+  }
+  
+  #circle3 {
+    position: relative;
+    width: 120px; /* ความกว้าง */
+    height: 120px; /* ความสูง */
+    background:white;
+    border-style: solid;
+    border-radius: 70px;
+    border-color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -55px;
+  }
+  
+  #circle4 {
+    position: relative;
+    width: 120px; /* ความกว้าง */
+    height: 120px; /* ความสูง */
+    background:white;
+    border-style: solid;
+    border-radius: 70px;
+    border-color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -55px;
+  }
+  
+  #circle5 {
+    position: relative;
+    width: 120px; /* ความกว้าง */
+    height: 120px; /* ความสูง */
+    background:white;
+    border-style: solid;
+    border-radius: 70px;
+    border-color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -55px;
+  }
+  
+  #circle6 {
+    position: relative;
+    width: 120px; /* ความกว้าง */
+    height: 120px; /* ความสูง */
+    background:white;
+    border-style: solid;
+    border-radius: 70px;
+    border-color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -55px;
+  }
+  
+  #circle7 {
+    position: relative;
+    width: 120px; /* ความกว้าง */
+    height: 120px; /* ความสูง */
+    background:white;
+    border-style: solid;
+    border-radius: 70px;
+    border-color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -55px;
+  }
+  
+  #circle8 {
+    position: relative;
+    width: 120px; /* ความกว้าง */
+    height: 120px; /* ความสูง */
+    background:white;
+    border-style: solid;
+    border-radius: 70px;
+    border-color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -55px;
+  }
+  
+  #circle9 {
+    position: relative;
+    width: 120px; /* ความกว้าง */
+    height: 120px; /* ความสูง */
+    background:white;
+    border-style: solid;
+    border-radius: 70px;
+    border-color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -55px;
+  }
+  
+  #circle10 {
+    position: relative;
+    width: 120px; /* ความกว้าง */
+    height: 120px; /* ความสูง */
+    background:white;
+    border-style: solid;
+    border-radius: 70px;
+    border-color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -55px;
+  }
+  
+  #final{
+    position: relative;
+    width: 100px; /* ความกว้าง */
+    height: 100px; /* ความสูง */
+    background:white;
+    border-radius: 100px;
+    border-color: gray;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: double;
+    padding: 5px;
+    border: 17px gray double;
+    margin-left: -50px;
+  }
+  
+  
+  /* initial arrow (before start)*/
+  .initialArrow:after {
+    content: "";
+    display: inline-block !important;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    vertical-align: middle;
+    margin-top: -18px;
+    margin-left: 40px;
+  }
+  .initialArrow:before {
+    width: 50px;
+    height: 5px;
+    background: black;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left:-5px;
+    margin-top: 75px;
+  }
+  
+  /* arrow right to next stage */
+  .arrow-right:after {
+    content: "";
+    display: inline-block !important;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    vertical-align: middle;
+    margin-top: -17px;
+    margin-left: 85px;
+  }
+  .arrow-right:before {
+    width: 120px;
+    height: 5px;
+    background: black;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 80px;
+    margin-left: -25px;
+  }
+  
+  /*arrow with 60 degrees*/
+  .arrow60-1:after {
+    content: "";
+    display: inline-block !important;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    vertical-align: middle;
+    margin-top: 17px;
+    margin-left: 90px;
+    transform: rotate(60deg);
+  }
+  .arrow60-1::before{
+    width: 90px;
+    height: 5px;
+    background: black;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 80px;
+    margin-left: 32px;
+    transform: rotate(60deg);
+  }
+  
+  /*long arrow with 60 degrees*/
+  .arrow60-2:after {
+    content: "";
+    display: inline-block !important;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    vertical-align: middle;
+    margin-top: 120px;
+    margin-left: 232px;
+    transform: rotate(60deg);
+  }
+  .arrow60-2::before{
+    width: 320px;
+    height: 5px;
+    background: black;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 180px;
+    transform: rotate(60deg);
+  }
+  
+  /*arrow down*/
+  .arrowdown:after {
+    content: "";
+    display: inline-block !important;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    vertical-align: middle;
+    margin-top: 105px;
+    margin-left: 178px;
+    transform: rotate(90deg);
+  }
+  .arrowdown::before{
+    width: 250px;
+    height: 5px;
+    background: black;
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 180px;
+    margin-left: 60px;
+    transform: rotate(90deg);
+  }
+  
+  /*back from row1 (milktea , Cocoa)*/
+  .backfromRow1:after {
+    content: "";
+    display: inline-block !important;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    vertical-align: middle;
+    margin-top: 90px;
+    margin-left: 110px;
+    transform: rotate(70deg);
+  }
+  .backfromRow1:before{
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 150px;
+    border: 5px solid transparent;
+    border-bottom-color: black;
+    border-radius: 60%;
+    transform: rotate(120deg);
+    margin-left: 95px;
+    margin-top: 10px;
+    }
+  
+  /*back from row2 (50% sweet , 100% sweet) */
+  .backfromRow2:after {
+    content: "";
+    display: inline-block !important;
+    vertical-align: middle;
+    margin-top: 175px;
+    margin-left: 87px;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    transform: rotate(82deg);
+  }
+  .backfromRow2:before{
+    content: "";
+    position: absolute;
+    height: 1200px;
+    width: 680px;
+    border: 5px solid transparent;
+    border-bottom-color: black;
+    border-radius: 60% 90%;
+    transform: rotate(148deg);
+    margin-left:215px;
+    margin-top: -120px;
+    }
+  
+  /*back from row3 (add bubble , not add bubble)*/
+  .backfromRow3:after {
+    content: "";
+    display: inline-block !important;
+    vertical-align: middle;
+    margin-top: 240px;
+    margin-left: -160px;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    transform: rotate(85deg);
+  }
+  .backfromRow3:before{
+    content: "";
+    position: absolute;
+    height: 1800px;
+    width: 1100px;
+    border: 5px solid transparent;
+    border-bottom-color: black;
+    border-radius: 32% 90%;
+    transform: rotate(152deg);
+    margin-left: 60px;
+    margin-top: -155px;
+    }
+  
+  /*back from Row4 (+10 bubble price , total 10 baht)*/
+  .backfromRow4:after {
+    content: "";
+    display: inline-block !important;
+    vertical-align: middle;
+    margin-top: 210px;
+    margin-left: -292px;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    transform: rotate(85deg);
+  }
+  .backfromRow4:before{
+    content: "";
+    position: absolute;
+    height: 2300px;
+    width: 1500px;
+    border: 5px solid transparent;
+    border-bottom-color: black;
+    border-radius: 25% 100%;
+    transform: rotate(155deg);
+    margin-left: -15px;
+    margin-top: -255px;
+    }
+    
+  /*back from row5 (total 20 baht)*/
+  .backfromRow5:after {
+    content: "";
+    display: inline-block !important;
+    vertical-align: middle;
+    margin-top: 182px;
+    margin-left: -485px;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    transform: rotate(85deg);
+  }
+  .backfromRow5:before{
+    content: "";
+    position: absolute;
+    height: 2800px;
+    width: 1900px;
+    border: 5px solid transparent;
+    border-bottom-color: black;
+    border-radius: 25% 100%;
+    transform: rotate(158deg);
+    margin-left: -200px;
+    margin-top: -340px;
+    }
+  
+  /* Loop itselfs*/
+  .loop:before{
+    content: "";
+    display: inline-block !important;
+    border-left: 15px solid black;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    margin-left: 40px;
+    transform: rotate(120deg);
+  }
+  .loop:after{
+    content: "";
+    position: absolute;
+    margin-top: -70px;
+    height: 50px;
+    width: 50px;
+    border: 5px solid transparent;
+    border-color: black;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+  }
+  /*--------END OF DFA---------- */
+  
+  
+  
+  .pay{
+    font-size: 30px;
+  }
+  
+  #pay1{
+    background-color: white;
+    font-size: 30px;
+  }
+  
+  #warning{
+    font-size: 50px;
+    color: red;
+    /* background-color: white; */
+  }
+  
+  
