@@ -18,7 +18,7 @@
   }
   
   .header {
-      background-color: #dfb8d7;
+      background-color: #4d77eb;
       text-align: center;
       padding: 20px; 
       font-size: 40px;
@@ -30,11 +30,11 @@
     
   
   .blank{
-      background-color: #FFFFFF;
+      background-color: #303030;
       padding: 5px;
   }
-  .pink{
-    background-color: #f7b4c6;
+  .blue{
+    background-color: #2834dd;
     padding-top: 5px
   }
   .gray{
