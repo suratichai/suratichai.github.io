@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded',init);
 var input = '';
 var price = 0;
 var water = 0;
-var imgorder = '';
 var i = 0;
 var accept = 0;
 var mode = 0;
@@ -12,7 +11,6 @@ function init()
 {
   var top = document.getElementById("header").offsetTop;
   window.scrollTo(top, 0);
-    //$(':input').prop('disabled', true);
   document.getElementById("MilkTea").disabled = false;
   document.getElementById("GreenTea").disabled = false;
   document.getElementById("cancel1").disabled = false;
@@ -25,10 +23,6 @@ function init()
   document.getElementById("inputtest").style.display = "none";
   document.getElementById("testingmode").style.backgroundColor = "white";
     document.getElementById("vendingmode").style.backgroundColor = "#97d4d7";
-
-    document.getElementById('imageorder').setAttribute('src', 'image/emptycub.png');
-  /*document.getElementById("priceElement").innerHTML = price;
-document.getElementById("currentPriceElement").innerHTML = price;*/
 
   showdata();
 }
@@ -90,41 +84,12 @@ function gotoBubble(sugar) {
 function gotoPayment(bubble) {
     orderSuccess();
   input += bubble;
-  if (bubble === '0')
-  {
-    price = 30;
-    if (water === 1)
-    {
-      imgorder = 'image/mb1.png'
-    }
-    else
-    {
-      imgorder = 'image/mb2.png'
-    }
-  }
-  else if(bubble === '1')
-  {
-    price = 20;
-    if (water === 1)
-    {
-      imgorder = 'image/mt1.png'
-    }
-    else
-    {
-      imgorder = 'image/mt2.png'
-    }
-  }
+  
   document.getElementById("Add").disabled = true;
     document.getElementById("NotAdd").disabled = true;
 
   document.getElementById("cancel3").disabled = false;
 
-  //document.getElementById("cancel4").disabled = false;
-    
-  //document.getElementById("priceElement").innerHTML = price;
-  //document.getElementById("currentPriceElement").innerHTML = price;
-
-    //var top = document.getElementById('orderSuccess').offsetTop;
   showdata();
 }
 
@@ -132,16 +97,10 @@ function cancel() {
   input = '';
   order = '';
   price = 0;
-  imgorder = '';
   i = 0;
   accept = 0;
   water = 0;
 
-    
-  /*document.getElementById('imageorder').setAttribute('src','image/emptycub.png');
-  document.getElementById("order").innerHTML = '';
-  /*document.getElementById("priceElement").innerHTML = price;
-  document.getElementById("currentPriceElement").innerHTML = price;*/
     init();
 }
 
@@ -149,14 +108,10 @@ function cancel2() {
   input = '';
   order = '';
   price = 0;
-  imgorder = '';
   i = 0;
   accept = 0;
   water = 0;
 
-  document.getElementById('imageorder').setAttribute('src','image/emptycub.png');
-  /*document.getElementById("priceElement").innerHTML = price;
-  document.getElementById("currentPriceElement").innerHTML = price;*/
   showdata();
 }
 
@@ -179,7 +134,6 @@ function pay(c)
 function orderSuccess()
 {
   showdata();
-  document.getElementById('imageorder').setAttribute("src",imgorder);
   document.getElementById('cancel3').setAttribute("value",'Restart');
     var top = document.getElementById('orderSuccess').offsetTop;
   window.scrollTo(0, top-250);
