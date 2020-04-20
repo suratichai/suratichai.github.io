@@ -62,13 +62,17 @@ function gotoBubble(sugar) {
   input += sugar;
   if (sugar === '0')
   {
-      document.getElementById('Add').setAttribute("value", 'Start Water Atomizer');
-      document.getElementById('NotAdd').setAttribute("value", 'Start Dehumidifier');
+      document.getElementById('Add').setAttribute("value", 'Water Spray Humidifier');
+      document.getElementById('Image1').setAttribute("src", 'img/sp.jpg');
+      document.getElementById('NotAdd').setAttribute("value", 'Engage Dehumidifier');
+      document.getElementById('Image2').setAttribute("src", 'img/dhu.jpg');
   }
   else if (sugar === '1')
   {
       document.getElementById('Add').setAttribute("value", 'Hold Static Air');
+      document.getElementById('Image1').setAttribute("src", 'img/hold.jpg');
       document.getElementById('NotAdd').setAttribute("value", 'Cycle Air');
+      document.getElementById('Image2').setAttribute("src", 'img/vent.jpg');
   }
   document.getElementById("100").disabled = true;
   document.getElementById("50").disabled = true;
@@ -176,7 +180,7 @@ function orderSuccess()
 {
   showdata();
   document.getElementById('imageorder').setAttribute("src",imgorder);
-  document.getElementById('cancel3').setAttribute("value",'New Order');
+  document.getElementById('cancel3').setAttribute("value",'Restart');
     var top = document.getElementById('orderSuccess').offsetTop;
   window.scrollTo(0, top-250);
 }
