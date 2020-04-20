@@ -1,7 +1,9 @@
 <!-- saved from url=(0033)https://rathachai.github.io/CV/me -->
 <html>
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="page.js" type="text/javascript"></script>
 	<head>
-		<link rel="stylesheet" href="frame.css" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="frame.css">
 		<title>TOC assignment</title>
 	</head>
 	<body>
@@ -16,19 +18,19 @@
   <div class="grid-container">
     <img class="img1" src="image/liv.png">
     <img class="img1" src="image/bed.png">
-    <input onclick="gotoSugar('0')" type="button" class="button" id="MilkTea" value="Milk Tea" name="drink">
-    <input onclick="gotoSugar('1')" type="button" class="button" id="GreenTea" value="Green Tea" name="drink">
+    <input onclick="gotoSugar('0')" type="button" class="button" id="MilkTea" value="Living room" name="drink">
+    <input onclick="gotoSugar('1')" type="button" class="button" id="GreenTea" value="Bedroom" name="drink">
     <input onclick="cancel('r')" type="button" class="cancel canbutton canbutton1" id="cancel1" value="Cancel">
   </div>
   <div class="pink" id="sugar">
     <div class="tag2">
-      <h2>STEP 2 : % Of Sugar</h2>
+      <h2>Please select sub-system</h2>
     </div>
     <div class="grid-container sugar">
       <img class="img2" src="image/sg2.png">
       <img class="img2" src="image/sg1.png">
-      <input onclick="gotoBubble('0')" type="button" class="button2" id="100" value="100%">
-      <input onclick="gotoBubble('1')" type="button" class="button2" id="50" value="50%">
+      <input onclick="gotoBubble('0')" type="button" class="button2" id="100" value="Humidity Controller">
+      <input onclick="gotoBubble('1')" type="button" class="button2" id="50" value="Ventilation Controller">
       <input onclick="cancel('r')" type="button" class="cancel canbutton canbutton1" id="cancel2" value="Cancel">
       <!-- <button class="cancle canbutton canbutton1">Cancle</button> -->
 
@@ -38,13 +40,13 @@
 
   <div class="blank" id="bubble">
     <div class="tag1">
-      <h2>STEP 3 : Add Bubble</h2>
+      <h2>Select Mode of Operation</h2>
     </div>
     <div class="grid-container">
-      <img class="img1" src="image/bb1.png">
-      <img class="img1" src="image/bb2.png">
-      <input onclick="gotoPayment('0')" type="button" class="button" id="Add" value="Add">
-      <input onclick="gotoPayment('1')" type="button" class="button" id="NotAdd" value="Not Add">
+      <img class="img1" src="img/bb1.png">
+      <img class="img1" src="img/bb2.png">
+      <input onclick="gotoPayment('0')" type="button" class="button" id="Add" value="Water Spray Humidifier">
+      <input onclick="gotoPayment('1')" type="button" class="button" id="NotAdd" value="Engage Dehumidifier">
 
       <input onclick="cancel('r')" type="button" class="cancel canbutton canbutton1" id="cancel3" value="Cancel">
       <!-- <button class="cancle canbutton canbutton1">Cancle</button> -->
