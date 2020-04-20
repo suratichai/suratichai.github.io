@@ -44,7 +44,7 @@ function gotoSugar(drink) {
 
   document.getElementById("100").disabled = false;
   document.getElementById("50").disabled = false;
-  document.getElementById("cancel2").disabled = false;
+  document.getElementById("cancel1").disabled = false;
 
   var top = document.getElementById('sugar').offsetTop;
   window.scrollTo(0, top);
@@ -70,11 +70,11 @@ function gotoBubble(sugar) {
   }
   document.getElementById("100").disabled = true;
   document.getElementById("50").disabled = true;
-  document.getElementById("cancel2").disabled = true;
+  document.getElementById("cancel1").disabled = true;
   
   document.getElementById("Add").disabled = false;
   document.getElementById("NotAdd").disabled = false;
-  document.getElementById("cancel3").disabled = false;
+  document.getElementById("cancel1").disabled = false;
 
   var top = document.getElementById('bubble').offsetTop;
   window.scrollTo(0, top);
@@ -82,15 +82,16 @@ function gotoBubble(sugar) {
 }
 
 function gotoPayment(bubble) {
-    orderSuccess();
+    
   input += bubble;
-  
+  orderSuccess();
   document.getElementById("Add").disabled = true;
     document.getElementById("NotAdd").disabled = true;
 
-  document.getElementById("cancel3").disabled = false;
+  document.getElementById("cancel1").disabled = false;
   var top = document.getElementById('enp').offsetTop;
   window.scrollTo(0, top);
+  
   showdata();
 }
 
