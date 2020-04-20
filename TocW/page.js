@@ -94,8 +94,7 @@ function gotoPayment(bubble) {
 }
 
 function cancel() {
-  input = '';
-  order = '';
+  input += 'R' ;
   price = 0;
   i = 0;
   accept = 0;
@@ -104,17 +103,15 @@ function cancel() {
     init();
 }
 
-function cancel2() {
-  input = '';
-  order = '';
-  price = 0;
-  i = 0;
-  accept = 0;
-  water = 0;
+function clear() {
+    input = '';
+    price = 0;
+    i = 0;
+    accept = 0;
+    water = 0;
 
-  showdata();
+    init();
 }
-
 
 function pay(c)
 {
