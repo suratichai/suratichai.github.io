@@ -89,7 +89,8 @@ function gotoPayment(bubble) {
     document.getElementById("NotAdd").disabled = true;
 
   document.getElementById("cancel3").disabled = false;
-
+  var top = document.getElementById('enp').offsetTop;
+  window.scrollTo(0, top);
   showdata();
 }
 
