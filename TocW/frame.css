@@ -66,12 +66,12 @@
       padding-bottom: 50px;
       display: grid;
       justify-content: center;
-      grid-template-columns:800px 250px;
+      grid-template-columns:250px 400px;
       grid-gap: 100px;
   
   }
   
-  .grid-container-dfa {
+/*  .grid-container-dfa {
     position: relative;
     padding-top: 100px;
     padding-right: 30px;
@@ -84,7 +84,7 @@
     grid-gap: 100px;
     
   
-  }
+  }*/
   
   .grid-container-or2 {
     position: relative;
@@ -122,13 +122,18 @@
       font-size: 30px;
     }
   
-  /*ขอบชมพู*/
   .img1{
-    background-color:#f7b4c6;
+    background-color:#aaaaaa;
     justify-content: center;
     height: 250px;
     width: 250px;
-    border-radius: 50% 
+  }
+  .checker{
+    background-color :#10aa10;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
   }
   .button {
     background-color: #a9a9a9;
@@ -152,15 +157,6 @@
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
   
-  /*ขอบขาว*/
-  .img2{
-    background-color :#FFFFFF;
-    justify-content: center;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    margin-top: 20px;
-  }
   .button2 {
     background-color:#a9a9a9;
     border: none;
@@ -219,7 +215,7 @@
   .tag1 {
     height:80px;
     width: 40%;
-    background-color: #f7b4c6;
+    background-color: #0066da;
     font-size: 25px;
     
   }
@@ -250,7 +246,7 @@
   }
   
   
-  .img3{
+/*  .img3{
     position: relative;
     left: 450px;
     background-color:#f7b4c6;
@@ -259,7 +255,7 @@
     width: 300px;
     border-radius: 50% 
   }
-  
+ */ 
   .cancel {
     position: relative;
     left: 500px;
