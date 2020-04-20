@@ -10,7 +10,8 @@
 		<div class="header" id="header">
 			<h2 style="display: inline;">Just a little </h2>
 			<h1 style="display: inline;">CENTRAL CONTROLLER</h1>
-		</div>
+    </div>
+  <div class="blank">
 		<div class="tag1">
     <h2>WELCOME : Please choose your room</h2>
   </div>
@@ -20,6 +21,7 @@
     <input onclick="gotoSugar('0')" type="button" class="button" id="MilkTea" value="Living room" name="drink">
     <input onclick="gotoSugar('1')" type="button" class="button" id="GreenTea" value="Bedroom" name="drink">
     <input onclick="cancel('r')" type="button" class="cancel canbutton canbutton1" id="cancel1" value="Cancel">
+  </div>
   </div>
   <div class="blue" id="sugar">
     <div class="tag2">
@@ -53,13 +55,13 @@
   </div>
 
 
-  <div class="blank">
-    <div class="tag1">
+  <div class="blue" id="enp">
+    <div class="tag2">
       <h2 id="orderSuccess">Transmitting Command</h2>
     </div>
     <div class="grid-container-or">
       <img class="checker" src="img/chk.png" id="imageorder">
-      <input onclick="neworder('r')" type="button" class="cancel canbutton canbutton1" id="cancel1" value="Cancel">
+      <input onclick="neworder('r')" type="button" class="cancel canbutton canbutton1" id="cancel1" value="Restart Operation">
       <!-- >>image/mb2.png ชาเขียว -->
 
     </div>
@@ -75,7 +77,7 @@
       <h2 id="tag5"></h2>
       <div id="result"></div>
       <div></div>
-      <button onclick="clear()" class="compute combutton combutton1" id="next">Refresh Resul</button>
+      <button onclick="clear()" class="compute combutton combutton1" id="next">Refresh Result</button>
     </div>
 	<img class="imgDFA" src="img/DFA.png">
     </div>

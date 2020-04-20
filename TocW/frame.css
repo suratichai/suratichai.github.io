@@ -34,7 +34,7 @@
       padding: 5px;
   }
   .blue{
-    background-color: #2834dd;
+    background-color: #181f80;
     padding-top: 5px
   }
   .gray{
@@ -62,12 +62,12 @@
       position: relative;
       padding-top: 50px;
       padding-right: 30px;
-      padding-left: 80px;
       padding-bottom: 50px;
+      padding-left: 80px;
       display: grid;
-      justify-content: center;
-      grid-template-columns:250px 400px;
-      grid-gap: 100px;
+      justify-content: left;
+      grid-template-columns:40% 25%;
+      grid-gap: auto;
   
   }
   
@@ -129,7 +129,7 @@
     width: 250px;
   }
   .checker{
-    background-color :#10aa10;
+    background-color :#16d116;
     justify-content: center;
     height: 200px;
     width: 200px;
