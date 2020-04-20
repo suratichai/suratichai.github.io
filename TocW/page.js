@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded',init);
 
 var input = '';
-var order = '';
 var price = 0;
 var water = 0;
 var imgorder = '';
@@ -28,7 +27,6 @@ function init()
     document.getElementById("vendingmode").style.backgroundColor = "#97d4d7";
 
     document.getElementById('imageorder').setAttribute('src', 'image/emptycub.png');
-    document.getElementById("order").innerHTML = '';
   /*document.getElementById("priceElement").innerHTML = price;
 document.getElementById("currentPriceElement").innerHTML = price;*/
 
@@ -39,12 +37,10 @@ function gotoSugar(drink) {
   input += drink;
   if (drink === '0')
   {
-    order += 'Milk Tea';
     water = 1;
   }
   else if (drink === '1')
   {
-    order += 'Green Tea';
     water = 2;
   }
 
@@ -66,15 +62,17 @@ function gotoBubble(sugar) {
   input += sugar;
   if (sugar === '0')
   {
-      order += ' 100%';
-      document.getElementById('Add').setAttribute("value", 'Start Water Atomizer');
-      document.getElementById('NotAdd').setAttribute("value", 'Start Dehumidifier');
+      document.getElementById('Add').setAttribute("value", 'Water Spray Humidifier');
+      document.getElementById('Image1').setAttribute("src", 'img/sp.jpg');
+      document.getElementById('NotAdd').setAttribute("value", 'Engage Dehumidifier');
+      document.getElementById('Image2').setAttribute("src", 'img/dhu.jpg');
   }
   else if (sugar === '1')
   {
-      order += ' 50%';
       document.getElementById('Add').setAttribute("value", 'Hold Static Air');
+      document.getElementById('Image1').setAttribute("src", 'img/hold.jpg');
       document.getElementById('NotAdd').setAttribute("value", 'Cycle Air');
+      document.getElementById('Image2').setAttribute("src", 'img/vent.jpg');
   }
   document.getElementById("100").disabled = true;
   document.getElementById("50").disabled = true;
@@ -94,7 +92,6 @@ function gotoPayment(bubble) {
   input += bubble;
   if (bubble === '0')
   {
-    order += ' Add bubble';
     price = 30;
     if (water === 1)
     {
@@ -107,7 +104,6 @@ function gotoPayment(bubble) {
   }
   else if(bubble === '1')
   {
-    order += ' Not Add bubble';
     price = 20;
     if (water === 1)
     {
@@ -159,7 +155,6 @@ function cancel2() {
   water = 0;
 
   document.getElementById('imageorder').setAttribute('src','image/emptycub.png');
-  document.getElementById("order").innerHTML = '';
   /*document.getElementById("priceElement").innerHTML = price;
   document.getElementById("currentPriceElement").innerHTML = price;*/
   showdata();
@@ -185,8 +180,7 @@ function orderSuccess()
 {
   showdata();
   document.getElementById('imageorder').setAttribute("src",imgorder);
-  document.getElementById('cancel3').setAttribute("value",'New Order');
-  document.getElementById("order").innerHTML = order;
+  document.getElementById('cancel3').setAttribute("value",'Restart');
     var top = document.getElementById('orderSuccess').offsetTop;
   window.scrollTo(0, top-250);
 }
