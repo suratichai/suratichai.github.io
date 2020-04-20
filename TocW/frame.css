@@ -145,7 +145,7 @@
     transition-duration: 0.4s;
     font-family: 'Superspace';
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 22px;
   }
   
   .button1:hover:enabled , .button:hover:enabled , .button2:hover:enabled{
@@ -176,7 +176,7 @@
     transition-duration: 0.4s;
     font-family: 'Superspace';
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 22px;
   }
   
   .button2-1:hover:enabled {
@@ -814,4 +814,8 @@
     /* background-color: white; */
   }
   
-  
+  .imgDFA{
+    justify-content: center;
+    height: auto;
+    width: 90%;
+  }
