@@ -133,7 +133,7 @@ function pay(c)
 function orderSuccess()
 {
   showdata();
-  document.getElementById('cancel3').setAttribute("value",'Restart');
+  document.getElementById('cancel1').setAttribute("value",'Restart');
     var top = document.getElementById('orderSuccess').offsetTop;
   window.scrollTo(0, top-250);
 }
@@ -146,6 +146,7 @@ function neworder()
 
 function compute()
 {
+  showdata()
   $(':input').prop('disabled',true);
   var next = document.getElementById("next");
   next.disabled = false;
