@@ -140,7 +140,8 @@ function orderSuccess()
 
 function neworder()
 {
-  document.getElementById('cancel3').setAttribute("value",'Cancel');
+//  document.getElementById('cancel3').setAttribute("value",'Cancel');
+  document.getElementById('cancel1').setAttribute("value",'Cancel');
   cancel('r');
 }
 
@@ -194,7 +195,7 @@ function end2()
   }
   else
   {
-    next.setAttribute('onclick',"delend(); cancel2(); testingMode()");
+    //next.setAttribute('onclick',"delend(); cancel2(); testingMode()");
   }
   next.style.backgroundColor = 'red';
   var result = document.getElementById("result");
